@@ -1,0 +1,62 @@
+.card_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.card_section {
+  border: 2px solid rgb(106, 106, 106);
+  border-radius: 7px;
+  height: 400px;
+  max-width: 385px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: rgb(218, 232, 214);
+  opacity: 0.97;
+}
+
+.ecommerce_image {
+  border: 1px solid rgba(84, 84, 84, 0.865);
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  background-size: cover;
+}
+
+.ecommerce_name {
+  font-size: 2.5rem;
+  color: #6e7672eb;
+}
+
+.ecommerce_price {
+  color: #303432eb;
+}
+
+.ecommerce_button {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 13px;
+  background: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ecommerce_image, .ecommerce_name, .ecommerce_button {
+  font-family: 'Open Sans', sans-serif;
+}

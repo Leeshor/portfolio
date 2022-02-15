@@ -1,0 +1,144 @@
+.background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    background-color: rgb(181, 181, 181);
+    min-height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("../background-image.jpg") ;
+    min-height: 100vh;
+    max-width: 1500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.payment_container {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 30px;
+    background-color: #fff;
+    width: 400px;
+    min-height: 400px;
+    -webkit-animation: fadein 1.8s;
+            animation: fadein 1.8s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.payment_container h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.payment_container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.payment_textarea {
+    border: 2px solid black;
+    width: 98%;
+}
+
+input:focus, textarea { 
+    outline: none ! important;
+    border: 2px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.payment_container > form > input {
+     height: 30px;
+     background-color: white;
+     width: 98%;
+}
+
+.payment_container label {
+    font-weight: 500;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px;
+  }
+
+.checkbox > input {
+    height: 15px;
+   
+}
+
+.payment_container button {
+    width: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 13px;
+    border: 1px solid;
+    background: #afb0af;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.confirmation_header {
+  color: #6b716eeb;
+  width: 250px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.confirmation_message {
+    margin-top: 30px;
+    color: #313432eb;
+}
+
+@media (max-width: 450px) {
+    .payment_container {
+        max-width: 300px;  
+      }
+  } 

@@ -1,0 +1,74 @@
+.checkoutProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: rgb(218, 232, 214);
+  border-radius: 7px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.checkoutProduct_image {
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.checkoutProduct_info {
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
+}
+
+.checkoutProduct_name {
+ font-size: 25px;
+ font-weight: 800;
+}
+
+.checkoutProduct_info > button {
+cursor: pointer;
+padding: 13px;
+background: #f9f9f9;
+font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 920px) {
+
+.checkoutProduct {
+max-width: 300px;
+}
+.checkoutProduct_image {
+max-width: 150px;
+max-height: 150px;
+}
+
+.checkoutProduct_name {
+max-inline-size: 25px;
+}
+}
+
+@media (max-width: 320px) {
+  .checkoutProduct {
+    max-width: 280px;
+    }
+
+  .checkoutProduct_image {
+      max-width: 110px;
+      max-height: 110px;
+      }
+      
+  .checkoutProduct_name {
+      max-inline-size: 20px;
+      font-size: 1.5rem;
+      }
+      
+}
